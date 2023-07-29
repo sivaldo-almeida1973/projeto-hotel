@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:Helvetica,"Trebuchet" , sans-serif;
+    background: #fff url(../imagens/bg.png) ;
+    margin: 15px; /*espaço nas margens da pagina*/
+}
+#container {
+    background: #ede9cc url(../imagens/bg-container.png) top center repeat-y;
+    margin: 0 auto;/*faz o container ficar centralizado*/
+    min-width: 740px;
+    max-width: 1180px; /*nao vai deixar distorcer a imagem e textos*/
+    
+}
+#topo {
+    position: relative; /*faz definir uma posiçao especifica*/
+    background: #dbcd87;
+    height: 15.4em;
+    min-height: 250px;/*altura minima*/
+   
+}
+
+#area-logo {
+    position: absolute; /*faz definir uma posiçao especifica*/
+    top: 0;
+    left: 0;
+    background: url(../imagens/topo-imagem-principal.png)no-repeat;
+    width: 100%;
+    height: 250px;
+    z-index: 1;/* fica abaixo */
+   
+}
+
+.logo a {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 3;/*fica acima de logo e menu*/
+    background: url(../imagens/logo.png) no-repeat;
+    width: 151px;
+    height: 66px;
+    text-indent: -9000px;/*faz o texto desaparecer na imagem , mas  se der algum problema no css ira aparecer na pagina em branco*/
+    
+
+}
+#area-menu {
+    position: absolute; /*faz definir uma posiçao especifica*/
+    top: 0;
+    right: 0;
+    background: url(../imagens/topo-imagem-lateral.png);
+    width: 450px;
+    height: 250px;
+    z-index: 2; /*fica no meio*/
+
+}
+
+#conteudo-menu {
+    margin-left: 90px; /*empurra conteudo para a direita */
+    margin-right: 15px;/*distancia da direita*/
+    padding-top: 15px; /*distancia em cima*/
+}
+
+#menu-locais {
+    border-bottom: 1px solid #b5ab56;
+    border-top:  1px solid #b5ab56;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.7em;
+    color: #8b8448;
+}
+
+#menu-locais .locais {
+    float: left;
+    line-height: 2.1em;/*centraliza tudo*/
+   
+}
+a {
+    text-decoration: none;
+}
+.reserva {
+    text-transform: uppercase;
+    background: #a29750;
+    color: #fff5b0;
+    padding: 5px 10px ;
+    float: right;
+}
+/*barra de navegacao vertical */
+
+#menu {
+    margin-top: 15px;
+}
+ul {
+    list-style: none;
+}
+ul#navegacao {
+    float: left;
+}
+ul#navegacao a {
+    text-transform: uppercase;/*deixa tudo maiusculas*/
+    font-size: 0.8em;
+    padding: 5px;
+    color: #6e672c;
+    line-height: 30px; /*abre espaços entre os links*/
+}
+ul#navegacao a:hover {
+    background: #fdf6be;
+}
+.depoimento{
+    width: 226px;
+    height: 164px;
+    float: right;
+}
+#area-principal {
+   float: left;
+   width: 50%;
+   background: url(../imagens/bg-area-principal.png) top left repeat-x ;
+   padding: 15px 0px;
+}
+
+
+#area-lateral {
+    float: left;
+    width: 50%;
+    background: url(../imagens/bg-area-lateral.png) top left repeat-x ;
+    padding: 20px 0px;
+}
+
+.conteudo {
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+#rodape {
+    clear: both;
+}
+
+/*formatações de texto*/
+
+h2{
+    color: #7d7640;
+    font-size: 1.1em;
+    padding: 5px;
+
+}
+p{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+/*formatações lateral*/
+#beneficios li {
+    padding: 8px;
+    border-bottom: 1px solid rgb(182, 178, 178);
+    height: 6em;  /*ficou sobre o texto a imagem*/
+
+}
+
+/*aqui resolve o problema de cima com float*/
+#beneficios li a img {
+    float: left;
+    margin: 8px;
+   
+   
+}
+
+#beneficios li a p {
+    color: #000;
+     font-size: 0.9em;
+   
+}
+#beneficios li a h3 {
+    font-size: 1.1em;
+    color: #615b2d;
+    padding: 5px 0;
+    background: url(../imagens/ornamento.png)no-repeat center right;
+  
+}
+
+#beneficios  li:hover {
+    background: #f6f3d6;
+    cursor: pointer;
+} 
