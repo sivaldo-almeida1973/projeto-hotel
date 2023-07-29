@@ -10,7 +10,7 @@ body{
 #container {
     background: #ede9cc url(../imagens/bg-container.png) top center repeat-y;
     margin: 0 auto;/*faz o container ficar centralizado*/
-    min-width: 740px;
+    min-width: 560px;
     max-width: 1180px; /*nao vai deixar distorcer a imagem e textos*/
     
 }
